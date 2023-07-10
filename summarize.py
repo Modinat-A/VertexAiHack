@@ -1,8 +1,7 @@
 import os
 import vertexai
 from vertexai.language_models import TextGenerationModel
-project_id = os.getenv('GOOGLE_CLOUD_PROJECT')
-
+project_id ='concise-decker-350904' #os.getenv('GOOGLE_CLOUD_PROJECT')
 
 def summary(text):
     vertexai.init(project=project_id , location="us-central1")
