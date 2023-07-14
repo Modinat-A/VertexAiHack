@@ -2,7 +2,7 @@ import os
 
 from google.cloud.speech_v2 import SpeechClient
 from google.cloud.speech_v2.types import cloud_speech
-project_id = 'concise-decker-350904' #os.getenv('GOOGLE_CLOUD_PROJECT')
+project_id = os.getenv('GOOGLE_CLOUD_PROJECT')
 
 
 def transcribe(
